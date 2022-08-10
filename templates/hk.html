@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial 
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .active {
+
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: yellow;
+      color: white;
+    }
+
+    .dropdown-content a:hover {
+      background-color: yellow;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .img-fluid {
+      width: 100%;
+      height: 600px;
+    }
+
+    .middle_content {
+      display: inline flex;
+      column-count: 2;
+      column-gap: 50px;
+    }
+
+    .middle_image {
+      display: inline flex;
+      column-count: 2;
+      column-gap: 50px;
+    }
+
+    /* .card {
+      width: 20rem;
+      margin: 2rem;
+    }
+
+    .image-grid-container {
+      display: grid;
+
+      /* For 2 columns */
+      /* grid-template-columns: auto auto; */
+    /* } */
+   */
+
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">About Us
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Our Founder</a>
+        <a href="#">Our History</a>
+        <a href="#">Education &Philosophy</a>
+        <a href="#">Our Vision</a>
+        <a href="#">Aims & Objectives</a>
+        <a href="#">School Anthem</a>
+        <a href="#">Principals</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Academics
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Teaching Staff</a>
+        <a href="#">Non Teaching Staff</a>
+        <a href="#">School Uniform</a>
+        <a href="#">Syllabus</a>
+
+        <a href="#">School Fees</a>
+
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Admission
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">New Admission</a>
+        <a href="#">Re Admission</a>
+
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Achievements
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">10th Board</a>
+        <a href="#">state level</a>
+        <a href="#">National level</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Gallery
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Classroom</a>
+        <a href="#">library</a>
+        <a href="#">Sports </a>
+        <a href="#">Events </a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Message
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Rules
+
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Log-In
+
+      </button>
+      <div class="dropdown-content">
+        <a href="http://127.0.0.1:5501/PROJECT_1/templates/Signin.html">Student</a>
+        <a href="#">Teacher</a>
+        <a href="#">Admin</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Contact:8093028506
+      </button>
+
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <div class="img-fluid">
+    <img
+      src="https://scontent-bom1-2.xx.fbcdn.net/v/t1.6435-9/72321639_2604842412910077_1500517756242493440_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=6uP1eb7WzLsAX-4HMOS&_nc_ht=scontent-bom1-2.xx&oh=00_AT_r83yP65r7Za3QUt2o_QqdGrDtSIRh6TBrbP7yV0OeGg&oe=6312DB1C"
+      class="img-fluid">
+  </div>
+
+  <div class="card-group">
+    <div class="card">
+       <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+    </div>
+      <img src="https://tse2.mm.bing.net/th?id=OIP.b6c7b-xKVyd8JTVzElP7RgHaEo&pid=Api&P=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.b6c7b-xKVyd8JTVzElP7RgHaEo&pid=Api&P=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.b6c7b-xKVyd8JTVzElP7RgHaEo&pid=Api&P=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
